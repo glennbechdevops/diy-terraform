@@ -22,7 +22,7 @@ bucket_name = os.environ['BUCKET_NAME']
 
 ## Oppgave
 
-Få koden til å kjøre, og forbedre koden ved å innføre Terrafomr variabler.
+Få koden til å kjøre, og forbedre koden ved å innføre Terraform variabler.
 
 
 
