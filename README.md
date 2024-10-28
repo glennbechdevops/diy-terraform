@@ -8,6 +8,8 @@ Du kan gjøre denne Laben på egen maskin eller i Cloud 9. Hvis du ghør den på
 
 ## Beksrivelse 
 
+NB! Hvis du vil gjøre denne øvingen i Cloud9 må du slå av Cloud 9 AWS managed credentials, og bruke ```aws configure```i terminal med egne nøkler. 
+
 Lambdafunksjonen i dette repositoryiet kan ikke deployes og virker ikke av et par årsaker.
 
 * Rollenavn er hardkodet, det finnes rolle med samme navn fra før.
