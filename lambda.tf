@@ -47,6 +47,7 @@ data "archive_file" "lambda_zip" {
 # see  https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/lambda_function.html
 
 resource "aws_lambda_function" "hello_world" {
+  source_code_hash = data.archive_file.lambda_zip.output_sha
   function_name = "hello_world_lambda"
   role          = aws_iam_role.lambda_role.arn
   handler       = "lambda_function.lambda_handler"
