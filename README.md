@@ -1,14 +1,32 @@
 # Fix it yourself lab
 
-Du kan gjøre denne Laben på egen maskin eller i Cloud 9. Hvis du ghør den på egen maskin trenger du
+Du skal gjøre denne laben i GitHub Codespaces. Codespaces gir deg et fullstendig utviklingsmiljø i nettleseren med alt du trenger ferdig installert.
 
-* AWS CLI
-* Terraform
-* AWS IAM nøkler for din bruker
+## Oppsett av Codespaces
 
-## Beksrivelse 
+1. Gå til dette repositoryet på GitHub
+2. Klikk på den grønne **Code**-knappen
+3. Velg **Codespaces**-fanen
+4. Klikk **Create codespace on main**
+5. Vent mens Codespaces starter opp (tar vanligvis 1-2 minutter)
 
-NB! Hvis du vil gjøre denne øvingen i Cloud9 må du slå av Cloud 9 AWS managed credentials, og bruke ```aws configure```i terminal med egne nøkler. 
+Codespaces kommer med AWS CLI og Terraform ferdig installert.
+
+## Konfigurere AWS credentials
+
+Når Codespaces er startet, må du konfigurere dine AWS credentials:
+
+```bash
+aws configure
+```
+
+Du vil bli spurt om:
+- AWS Access Key ID
+- AWS Secret Access Key
+- Default region name (bruk `eu-west-1`)
+- Default output format (trykk bare Enter)
+
+## Beskrivelse 
 
 Lambdafunksjonen i dette repositoryiet kan ikke deployes og virker ikke av et par årsaker.
 
