@@ -31,9 +31,9 @@ Du vil bli spurt om:
 Lambdafunksjonen i dette repositoryiet kan ikke deployes og virker ikke av et par årsaker.
 
 * Rollenavn er hardkodet, det finnes rolle med samme navn fra før.
-* Lambdafunksjonen sin Rolle gir ikke tilgang til S3
+* Lambdafunksjonen sin Rolle gir ikke tilgang til S3 
 * Navnet til lambdafunksjonen er hardkodet.
-* Funksjonene forventer å finne en environment variabel som heter ```BUCKET_NAME```     
+* Funksjonen (koden) forventer å finne en environment variabel som heter ```BUCKET_NAME```     
 ```
 bucket_name = os.environ['BUCKET_NAME'] 
 ```
